@@ -105,7 +105,8 @@
   }
   
   .font-mono {
-    font-family: 'GTFlexaMono' !important;
+    font-family: 'Karla', sans-serif !important;
+    font-weight: 300;
   }
   
   * {
