@@ -13,13 +13,13 @@ html, body {
 
 footer {
 	background-color: #666;
-    opacity: .2;
-	pointer-events: none;
+    /*opacity: .2;
+	pointer-events: none;*/
 }
 
 main {
-  opacity: .2;
-  pointer-events: none;
+  /*opacity: .2;*/
+  /*pointer-events: none;*/
 }
 
 h1 {
@@ -165,7 +165,7 @@ header, footer {
 
 #patternDescription {
 	/* font-size: 3em; */
-	color: #eee;
+	color: #fff;
 
 	text-align: center;
 }
@@ -269,11 +269,11 @@ input[type=range]:focus {
 /*Styling the thumb in Chrome*/
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
-  border: 1px solid #888;
+  border: 1px solid #fff;
   height: 2.5em;
   width: 2.5em;
   border-radius: 50%;
-  background: #ccc;
+  background: #fff;
   cursor: pointer;
   margin-top: -12px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
 }

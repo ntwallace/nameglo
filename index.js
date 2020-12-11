@@ -2,7 +2,7 @@ var colorPicker = new iro.ColorPicker("#picker", {
   width: 250,
   color: "#FF0000",
   borderWidth: 2,
-  borderColor: "#888"
+  borderColor: "#B0EAE4"
 });
 
 let colorSlot = 0;
@@ -272,11 +272,9 @@ const animations = [
 	{'id':3, 'name':'Wipe', 'description':'Switches between primary and secondary, switching LEDs one by one, start to end'},
 	{'id':9, 'name':'Rainbow Wave', 'description':'Rainbow wave along the whole strip'},
 	{'id':87, 'name':'Rainbow Twinkle', 'description':'Rainbow animation moving down the strip with white twinkles'},
-	{'id':63, 'name':'Rainbow Sparkles', 'description':'Rainbow flashes with variable brightness'},
 	{'id':13, 'name':'Theater', 'description':'Pattern of one lit and two unlit LEDs running'},
 	{'id':28, 'name':'Chase', 'description':'2 LEDs in primary color running on secondary'},
 	{'id':89, 'name':'Fireworks', 'description':'Exploding multicolor fireworks'},
-	{'id':93, 'name':'Running Trail', 'description':'Moving dots with trail'},
 	
 ];
 
