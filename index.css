@@ -13,13 +13,13 @@ html, body {
 
 footer {
 	background-color: #666;
-    /*opacity: .2;
-	pointer-events: none;*/
+    opacity: .2;
+	pointer-events: none;
 }
 
 main {
-  /*opacity: .2;*/
-  /*pointer-events: none;*/
+  opacity: .2;
+  pointer-events: none;
 }
 
 h1 {
