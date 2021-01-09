@@ -21,7 +21,7 @@ colorPicker.on(['color:change'], function(color) {
   rgbArray = Object.values(color.rgb);
   setRgbInputs(rgbArray);
 
-  output = document.getElementById('outputSelect').value;
+  output = 0;
 
   	// pass to BLE
  	if(changeColor) {
@@ -38,7 +38,7 @@ function onColorSlot(e) {
 	changeColor = false;
 	
 	let allOutputs = false;
-	let output = document.getElementById('outputSelect').value;
+	let output = 1;
 
 	if(output == 0)	allOutputs = true;
 
@@ -157,7 +157,7 @@ function onAnimationDropdown(val) {
 	document.getElementById('patternDescription').textContent = description;
  	//document.getElementById('patternGif').innerHTML = '<img src=' + gifLink + val + gifFooter + ' alt />';
 
- 	output = document.getElementById('outputSelect').value;
+ 	output = 1;
 
  	if(btConnected) bleSetPattern(val, output);
 }
@@ -176,7 +176,7 @@ function onPatternSlider() {
 }
 
 function onSpeedSlider(val) {
-	output = document.getElementById('outputSelect').value;
+	output = 1;
 	speed = val;
 
 	console.log('Setting output ' + output + ' speed to ' + speed + '%');
@@ -185,7 +185,7 @@ function onSpeedSlider(val) {
 }
 
 function onIntensitySlider(val) {
-	output = document.getElementById('outputSelect').value;
+	output = 1;
 	intensity = val;
 
 	console.log('Setting output ' + output + ' intensity to ' + intensity + '%');
