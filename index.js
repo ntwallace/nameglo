@@ -106,23 +106,23 @@ function setColorPicker(rgbArray) {
  	colorChangeVal = e.value;
  	rgbArray = [0,0,0];
 
- 	switch(e.getAttribute('id')) {
- 		case 'r-input':
- 			rgbArray[0] = colorChangeVal;
- 			rgbArray[1] = document.getElementById('g-input').value;
- 			rgbArray[2] = document.getElementById('b-input').value;
- 			break;
- 		case 'g-input':
- 			rgbArray[0] = document.getElementById('r-input').value;
- 			rgbArray[1] = colorChangeVal;
- 			rgbArray[2] = document.getElementById('b-input').value;
- 			break;
- 		case 'b-input':
- 			rgbArray[0] = document.getElementById('r-input').value;
- 			rgbArray[1] = document.getElementById('g-input').value;
- 			rgbArray[2] = colorChangeVal;
- 			break;
- 	}
+ 	// switch(e.getAttribute('id')) {
+ 	// 	case 'r-input':
+ 	// 		rgbArray[0] = colorChangeVal;
+ 	// 		rgbArray[1] = document.getElementById('g-input').value;
+ 	// 		rgbArray[2] = document.getElementById('b-input').value;
+ 	// 		break;
+ 	// 	case 'g-input':
+ 	// 		rgbArray[0] = document.getElementById('r-input').value;
+ 	// 		rgbArray[1] = colorChangeVal;
+ 	// 		rgbArray[2] = document.getElementById('b-input').value;
+ 	// 		break;
+ 	// 	case 'b-input':
+ 	// 		rgbArray[0] = document.getElementById('r-input').value;
+ 	// 		rgbArray[1] = document.getElementById('g-input').value;
+ 	// 		rgbArray[2] = colorChangeVal;
+ 	// 		break;
+ 	// }
 
  	setColorPicker(rgbArray);
 
@@ -138,9 +138,9 @@ function setColorPicker(rgbArray) {
  	b = rgbArray[2];
 
 
- 	document.getElementById('r-input').value = r;
- 	document.getElementById('g-input').value = g;
- 	document.getElementById('b-input').value = b;
+ 	// document.getElementById('r-input').value = r;
+ 	// document.getElementById('g-input').value = g;
+ 	// document.getElementById('b-input').value = b;
  }
 
  function getRgbString(rgbArray) {
