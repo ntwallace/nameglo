@@ -229,27 +229,6 @@ function onIntensitySlider(val) {
  	if(btConnected) bleSetMasterVals('temperature', val);
  }
 
-function onModeSelect(val) {
-	if(btConnected) bleSetOpMode(val);
-}
-
-function onOutputSelect(val) {
-	changeColor = false;
-
-	if(val == 0) val += 1;
-
-	if(btConnected) {
-		bleSetOutput(val);
-		bleGetRgbVals(colorSlot);
-		bleGetPattern();
-		bleGetSpeed();
-		bleGetIntensity();
-	}
-
-
-
-}
-
 
 function zeroPad(num, numZeros) {
     var n = Math.abs(num);
