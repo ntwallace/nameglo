@@ -56,6 +56,9 @@ function onDeviceConnected() {
     document.getElementById('footer').style.pointerEvents = "auto";
 
     bleGetOpMode();
+    bleGetRgbVals();
+    bleGetPattern();
+    bleGetSpeed();
 
     btConnected = true;
 }
@@ -235,7 +238,7 @@ async function bleGetRgbVals(colorSlot) {
 
     } catch(error) {
         console.log('Error getting RGB values. Error: ' + error);
-  }
+    }
 }
 
 async function bleSetPattern(pattern, output) {
@@ -255,14 +258,13 @@ async function bleSetPattern(pattern, output) {
 
 async function bleGetPattern(pattern, output) {
     try {
-
         console.log('Connecting to Pattern RGB characteristic');
         const characteristic = await patternService.getCharacteristic('2392fab3-b378-4d6e-a395-5e37a5e7e1eb');
 
         const value  = await characteristic.readValue();
 
-        var dec = new TextDecoder("utf-8");
-        const pattern = dec.decode(value);
+        const pattern = value.getUint8() - 48;
+        console.log("pattern received = " + pattern);
 
         document.getElementById('animationDropdown').value = pattern;
 
